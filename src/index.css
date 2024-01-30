@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  .main-container {
+    @apply w-screen h-screen flex flex-col
+  }
+
+  .top-nav {
+    @apply absolute top-0 w-full h-14 bg-purple-500 items-center flex z-30s
+  }
+
+  .nav-text {
+    @apply font-normal text-4xl font-silkscreen tracking-[-.4rem]
+  }
+
+  .content {
+    @apply w-full h-full bg-slate-600 mt-14 p-4 flex flex-col
+  }
+
+  .grid {
+    @apply w-full h-full bg-gray-400
+  }
+
+
+  .bottom {
+    @apply w-full h-1/4 bg-gray-500 z-30
+  }
+
+  .btn {
+    @apply text-white font-medium rounded-lg text-sm w-20 px-5 py-2.5 m-3 text-center bg-gradient-to-r from-purple-300 to-purple-500 hover:from-purple-500 hover:to-purple-700
+  }
+
+}
+
+@layer utilities {}
